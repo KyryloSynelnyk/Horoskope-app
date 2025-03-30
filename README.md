@@ -29,20 +29,12 @@ This web application provides horoscope forecasts for users based on their selec
 1. **Ensure you have Node.js installed** (version ≥16.x) along with npm.
 2. **Clone the project repository** (if downloaded from GitHub):
 git clone <repository_url>
-
-text
 3. **Navigate to the project directory:**
 cd my-horoscope-app
-
-text
 4. **Install dependencies:**
 npm install
-
-text
 5. **Start the development server:**
 npm run dev
-
-text
 6. **Open your browser and go to** [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## Visual Structure
