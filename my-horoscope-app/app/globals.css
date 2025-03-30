@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+
+}
+
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .MuiTypography-root {
+  color: #fff;
+}
+
+body.dark .MuiSelect-select {
+  color: #fff;
+}
+
+body.dark .MuiInputBase-input {
+  color: #fff;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: skyblue;
+  margin: 10px 0;
+  width: 0;
+  position: relative;
+  animation: drawLine 3s ease-in-out infinite;
+}
+@keyframes drawLine {
+  0% {
+    width: 0%;
+    left: 50%;
+  }
+  50% {
+    width: 50%;
+    left: 25%;
+  }
+  100% {
+    width: 100%;
+    left: 0%;
+  }
+}
+#factParagraph {
+  margin: 10px 0 20px 0;
+}
+#careerDescription,#relationshipDescription {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 0.875rem;
+}
